@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 
+using namespace std;
+
 class Shape {
 public:
     virtual double area() const = 0;
@@ -63,9 +65,9 @@ int main() {
     Rectangle rectangle(4, 6);
     Triangle triangle(3, 4, 5);
 
-    std::cout << "Circle - Area: " << circle.area() << ", Perimeter: " << circle.perimeter() << std::endl;
-    std::cout << "Rectangle - Area: " << rectangle.area() << ", Perimeter: " << rectangle.perimeter() << std::endl;
-    std::cout << "Triangle - Area: " << triangle.area() << ", Perimeter: " << triangle.perimeter() << std::endl;
+    cout << "Circle - Area: " << circle.area() << ", Perimeter: " << circle.perimeter() << endl;
+    cout << "Rectangle - Area: " << rectangle.area() << ", Perimeter: " << rectangle.perimeter() << endl;
+    cout << "Triangle - Area: " << triangle.area() << ", Perimeter: " << triangle.perimeter() << endl;
 
     return 0;
 }
